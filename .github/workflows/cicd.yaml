@@ -16,27 +16,10 @@ jobs:
       - name: Install Pulumi CLI
         uses: pulumi/action-install-pulumi-cli@v2
 
-      - name: Pulumi Login
-        uses: pulumi/actions@v3
-        with:
-          command: login
-          stack-name: dev
-
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-
-
-
-      - name: Pulumi Preview
-        uses: pulumi/actions@v3
-        with:
-          command: preview
-
-
-      - name: Update Infrastructure
-        uses: pulumi/actions@v3
+      - name: Applying infrastructure 🚀
+        uses: pulumi/actions@v4
         with:
           command: up
-          args: --yes
+          stack-name: dev
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
