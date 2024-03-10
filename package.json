@@ -1,0 +1,11 @@
+{
+    "name": "pulumi-github",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18"
+    },
+    "dependencies": {
+        "@pulumi/github": "^6.0.1",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
