@@ -1,7 +1,7 @@
 import * as pulumi from "@pulumi/pulumi";
 import * as github from "@pulumi/github";
 
-const repoName = "Github_IaC_with_Pulumi";
+const repoName = "Pulumi_created_repo";
 const repoDescription = "testing IaC + CICD with pulum";
 
 const repo = new github.Repository(repoName, {
