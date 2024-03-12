@@ -1,3 +1,3 @@
 config:
   github:token:
-    secure: ${{secrets.GH_ACCESS_TOKEN}}
+    secure: AAABAGHEg8ab0RPK26bE4QQ2GBMLltUwqN+kDftcqwd41/Udrcb3vWWeB/Y4Axc94QSpac+dhv6/jGqpldnPCvil3lXl4G6e
