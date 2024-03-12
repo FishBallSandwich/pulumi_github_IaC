@@ -1,6 +1,6 @@
 name: pulumi-github
 runtime: nodejs
-description: A minimal TypeScript Pulumi program
+description: testing Pulumi GitHub IaC
 config:
   pulumi:tags:
     value:

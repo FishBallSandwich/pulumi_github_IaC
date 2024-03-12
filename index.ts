@@ -21,6 +21,20 @@ const readme = new github.RepositoryFile("README", {
     content: readmeContent,
 });
 
+const branchProtection = new github.BranchProtection("mainBranchProtection",{
+    repositoryId: repo.nodeId,
+    pattern:"main",
+    enforceAdmins: false,
+    allowsDeletions: true,
+    BranchProtectionRequiredPullRequestReview: [{
+        requireCodeOwnerReviews: true,
+        requiredApprovingReviewCount: 1
+    }],
+    forcePushBypassers: [
+    "FishBallSandwich"
+    ]
+});
+
 
 export const repositoryName = repo.name;
 export const repositoryUrl = repo.htmlUrl;
