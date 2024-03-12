@@ -7,7 +7,7 @@ const repoDescription = "testing IaC + CICD with pulum";
 const repo = new github.Repository(repoName, {
     name: repoName,
     description: repoDescription,
-    visibility: "private",
+    visibility: "public",
 });
 
 const fileName = "README.md"
