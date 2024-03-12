@@ -26,7 +26,7 @@ const branchProtection = new github.BranchProtection("mainBranchProtection",{
     pattern:"main",
     enforceAdmins: false,
     allowsDeletions: true,
-    BranchProtectionRequiredPullRequestReview: [{
+    requiredPullRequestReviews: [{
         requireCodeOwnerReviews: true,
         requiredApprovingReviewCount: 1
     }],
