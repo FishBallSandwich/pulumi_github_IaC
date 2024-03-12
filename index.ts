@@ -31,7 +31,7 @@ const branchProtection = new github.BranchProtection("mainBranchProtection",{
         requiredApprovingReviewCount: 1
     }],
     forcePushBypassers: [
-    "FishBallSandwich"
+    "/FishBallSandwich"
     ]
 });
 
